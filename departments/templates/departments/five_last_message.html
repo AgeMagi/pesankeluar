@@ -1,0 +1,20 @@
+{% if messages %}
+    <thead>
+        <tr>
+            <th scope="col" class="text-center">Nomor Surat</th>
+            <th scope="col" class="text-center">Departemen</th>
+            <th scope="col" class="text-center">Divisi</th>
+            <th scope="col" class="text-center">Nama Pengirim</th>
+        </tr>
+    </thead>
+    <tbody class="order">
+        {% for message in messages %}
+            <tr>
+                <td class="text-center">{{ message.nomor }}</td>
+                <td class="text-center">{{ message.dep }}</td>
+                <td class="text-center">{{ message.div }}</td>
+                <td class="text-center">{{ message.name }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+{% endif %}

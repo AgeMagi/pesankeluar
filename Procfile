@@ -1,0 +1,1 @@
+web: gunicorn pesankeluar.wsgi --log-level=info --log-file -

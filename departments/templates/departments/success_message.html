@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% load department_tags %}
+
+{% block body_content %}
+    <div class="container">
+        <h4>Nomor Surat:</h4>
+        <p>{% last_message %}</p>
+        <h4>Dari:</h4>
+        <p>{{ message.name }}</p>
+    </div>
+{% endblock %}

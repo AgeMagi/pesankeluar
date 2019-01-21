@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% load bootstrap3 %}
+{% load department_tags %}
+
+{% block wrapper_class %}posts-wrapper{% endblock %}
+
+{% block body_content %}
+    <div class="container">
+        <h4>New Message</h4>
+        <form method="POST">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <input type="submit" value="Send" class="btn btn-primary btn-large">
+            <a href="{% url 'home' %}" class="btn btn-primary btn-large">Cancel</a>
+                <table role="grid" class="stack hover" style="width: 100%; border: 1px solid; margin-top: 50px; margin-bottom: 100px">
+                    {% five_last_message %}
+                </table>
+        </form>
+{% endblock %}
