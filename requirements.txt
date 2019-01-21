@@ -60,7 +60,6 @@ gunicorn==19.9.0
 gym==0.10.5
 h5py==2.7.1
 heapdict==1.0.0
-holdem==1.0.0
 html5lib==1.0.1
 httplib2==0.11.3
 idna==2.7
