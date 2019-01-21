@@ -35,9 +35,7 @@ ALLOWED_HOSTS = ['.herokuapp.com', 'localhost']
 
 # Application definition
 
-INSTALLED_APPS = [dotenv_file = os.path.join(BASE_DIR, ".env")
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
