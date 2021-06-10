@@ -31,7 +31,7 @@ decorator==4.3.0
 dill==0.2.8.2
 distributed==1.21.8
 dj-database-url==0.5.0
-Django==2.1.5
+Django==2.2.24
 django-bootstrap3==11.0.0
 docutils==0.14
 entrypoints==0.2.3
